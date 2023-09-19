@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+#root {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    height: 65px;
+    width: 100vw;
+    background: linear-gradient(90deg, #672280, #A626D3);
+}
+
+header > img {
+    height: 31px;
+    margin-right: 8px;
+}
+
+header > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.form {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.form > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 768px;
+}
+
+.form > div > input {
+    padding: 12px;
+    margin: 8px 0 8px 0;
+    border: 1px solid #D5D4D8;
+    border-radius: 8px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.form > div > input:focus {
+    outline: 1.5px solid #672280;
+}
+
+.form > div > label {
+    margin-top: 8px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.form > button {
+    padding: 12px;
+    margin: 16px 0 8px 0;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(0deg,#672280, #A626D3);
+    color: white;
+    box-shadow: 0px 2px 8px -2px #4E1A61;
+    font-family: 'Inter', sans-serif;
+}
+
+.form > button:hover {
+    cursor: pointer;
+}
+
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 32px 0;
+}
+
+.imgContainer > p {
+    position: absolute;
+    color: white;
+    
+    font-weight: 700;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    padding: 0 16px 0 16px;
+}
+
+.imgContainer > p:nth-of-type(1){
+    top: 15px;
+}
+
+.imgContainer > p:nth-of-type(2){
+    bottom: 15px;
+}
+
+.imgContainer >  img {
+    width: 100%;
+    border-radius: 8px;
+}
